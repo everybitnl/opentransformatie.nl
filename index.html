@@ -275,7 +275,7 @@
         new m.Collapse(document.querySelector('#search-trigger'));
     });
     // Load nav component
-    System.import(https://nl-design-system.gitlab.io/nl-design-system/uno/components/navigation/navigation.js').then(function (module) {
+    System.import('https://nl-design-system.gitlab.io/nl-design-system/uno/components/navigation/navigation.js').then(function (module) {
         var navs = document.querySelectorAll('.top-nav-autoresize');
         // Initialize all navs
         for (var i = 0; i < navs.length; i++) {
@@ -289,7 +289,7 @@
     });
 
     // Load example tabbing
-    System.import(https://nl-design-system.gitlab.io/nl-design-system/uno/components/tabs/tabs.js').then(function (module) {
+    System.import('https://nl-design-system.gitlab.io/nl-design-system/uno/components/tabs/tabs.js').then(function (module) {
         // Select all .tab elements inside the examples on the page
         var tabs = document.querySelectorAll('.example > .tab--example');
 
