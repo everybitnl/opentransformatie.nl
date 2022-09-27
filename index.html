@@ -242,7 +242,7 @@
                     <span class="footer__header">Open Transformatie NL</span>
 
                     <ul class="list list--links footer__nav">
-                        <li><a href=""></a></li>
+                        <li><a href="https://www.jgroenen.nl">door johan groenen</a></li>
                     </ul>
                 </div>
 
@@ -269,13 +269,13 @@
 
 <script>
     // Load collapse component
-    System['import'](https://nl-design-system.gitlab.io/nl-design-system/uno/components/collapse/collapse.js').then(function (m) {
+    System['import']('https://nl-design-system.gitlab.io/nl-design-system/uno/components/collapse/collapse.js').then(function (m) {
 
         //gebruikt unieke id van de nav om te voorkomen dat example collapses ook automatisch geactiveerd worden.
         new m.Collapse(document.querySelector('#search-trigger'));
     });
     // Load nav component
-    System.import(https://nl-design-system.gitlab.io/nl-design-system/uno/components/navigation/navigation.js').then(function (module) {
+    System.import('https://nl-design-system.gitlab.io/nl-design-system/uno/components/navigation/navigation.js').then(function (module) {
         var navs = document.querySelectorAll('.top-nav-autoresize');
         // Initialize all navs
         for (var i = 0; i < navs.length; i++) {
@@ -289,7 +289,7 @@
     });
 
     // Load example tabbing
-    System.import(https://nl-design-system.gitlab.io/nl-design-system/uno/components/tabs/tabs.js').then(function (module) {
+    System.import('https://nl-design-system.gitlab.io/nl-design-system/uno/components/tabs/tabs.js').then(function (module) {
         // Select all .tab elements inside the examples on the page
         var tabs = document.querySelectorAll('.example > .tab--example');
 
